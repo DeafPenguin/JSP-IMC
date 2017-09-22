@@ -6,7 +6,7 @@
 		<h2>Calculo de IMC</h2>
 		<form>
         	peso <input type="number" name="peso">
-        	altura <input type="number" name="altura">
+        	altura <input type="float" name="altura">
        		<button> Calcular </button>
 		</form>
 		<%
@@ -15,12 +15,12 @@
 		String pesoString = request.getParameter("peso");
 		String alturaString = request.getParameter("altura");
 		
-		int peso = pesoString == null ? 0 : Integer.parseInt(pesoString);
-		int altura = alturaString == null ? 0 : Integer.parseInt(alturaString);
+		float peso = pesoString == null ? 0 : Float.parseFloat(pesoString);
+		float altura = alturaString == null ? 0 : Float.parseFloat(alturaString);
 		
 	   
-		int quadrado = altura * altura;
-		int calculo = peso/quadrado;
+		float quadrado = altura * altura;
+		float calculo = peso/quadrado;
 	   
 		if(calculo<18.5){%><h3>Você está magro com esse indice</h3><%}
 		else if(calculo>=18.5 && calculo<25){%><h3>Você está normal com esse indice</h3><%}
