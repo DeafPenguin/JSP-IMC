@@ -5,8 +5,8 @@
 	<body>
 		<h2>Calculo de IMC</h2>
 		<form>
-        	peso <input type="number" name="peso">
-        	altura <input type="float" name="altura">
+        	peso <input type="number" name="peso"></br></br>
+        	altura <input type="float" name="altura"></br></br>
        		<button> Calcular </button>
 		</form>
 		<%
