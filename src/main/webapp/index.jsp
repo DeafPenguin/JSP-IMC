@@ -13,7 +13,7 @@
        //Inicio do scriptlet
        String pesoString = request.getParameter("peso");
        String alturaString = request.getParameter("altura");
-       //int altura2 = Integer.parseInt(alturaString);
+       int altura2 = Integer.parseInt(alturaString);
        int quadrado = altura2 * altura2;
        int calculo = Integer.parseInt(pesoString) / quadrado;
        if(calculo<18.5){%><h3>Você está magro com esse indice</h3><%}
